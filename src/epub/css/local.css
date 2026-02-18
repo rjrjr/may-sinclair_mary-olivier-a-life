@@ -79,8 +79,8 @@ footer{
 /* End letters */
 
 /* Engravings */
-[id~="chapter-5-3"] blockquote p,
-[id~="chapter-21-10"] blockquote p{
+#chapter-5-3 blockquote p,
+#chapter-21-10 blockquote p{
 	text-align: center;
 	text-indent: 0;
 }
