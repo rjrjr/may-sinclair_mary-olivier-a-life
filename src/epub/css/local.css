@@ -3,8 +3,14 @@
 
 header{
 	font-variant: small-caps;
-	margin: 1em;
+	/* top | right | bottom | left */
+	margin: 3em 1em 1.5em 1em;
 	text-align: center;
+	page-break-after: avoid;
+}
+
+[epub|type~="z3998:subchapter"] > header + *{
+	margin-top: 0;
 }
 
 [epub|type~="z3998:poem"] p,
