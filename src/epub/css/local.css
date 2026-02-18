@@ -1,6 +1,7 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
 
+/* Subchapter headers */
 header{
 	font-variant: small-caps;
 	/* top | right | bottom | left */
@@ -12,7 +13,9 @@ header{
 [epub|type~="z3998:subchapter"] > header + *{
 	margin-top: 0;
 }
+/* End subchapter headers */
 
+/* Poems etc. */
 [epub|type~="z3998:poem"] p,
 [epub|type~="z3998:verse"] p,
 [epub|type~="z3998:hymn"] p,
@@ -48,7 +51,9 @@ p span.i1{
 	padding-left: 2em;
 	text-indent: -1em;
 }
+/* End poems etc. */
 
+/* Letters */
 [epub|type~="z3998:letter"] header{
 	text-align: right;
 }
@@ -71,10 +76,12 @@ footer{
 	text-align: initial;
 	text-indent: 0;
 }
+/* End letters */
 
-/* The two engravings. */
+/* Engravings */
 [id~="chapter-5-3"] blockquote p,
 [id~="chapter-21-10"] blockquote p{
 	text-align: center;
 	text-indent: 0;
 }
+/* End engravings */
